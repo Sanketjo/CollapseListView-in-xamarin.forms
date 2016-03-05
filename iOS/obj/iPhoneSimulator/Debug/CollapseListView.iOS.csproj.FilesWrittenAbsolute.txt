@@ -1,0 +1,17 @@
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/CollapseListView.iOS.IndexPage.xaml
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/IndexPage.xaml.g.cs
+/Users/jayparikh/RnD/CollapseListView/iOS/bin/iPhoneSimulator/Debug/CollapseListView.iOS.exe.mdb
+/Users/jayparikh/RnD/CollapseListView/iOS/bin/iPhoneSimulator/Debug/CollapseListView.iOS.exe
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/CollapseListView.iOS.exe
+/Users/jayparikh/RnD/CollapseListView/iOS/obj/iPhoneSimulator/Debug/CollapseListView.iOS.exe.mdb
+/Users/jayparikh/RnD/CollapseListView/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/jayparikh/RnD/CollapseListView/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/jayparikh/RnD/CollapseListView/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
