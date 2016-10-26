@@ -29,6 +29,7 @@ namespace CollapseListView.iOS
 					ScrollEnabled = true,
 					SectionFooterHeight = 0,
 					SectionHeaderHeight = NativeListCell.HEIGHT,
+
 					//The following two lines are written to disable the default behaviour of section header movement with cells
 					TableHeaderView = new UIView (new CGRect (0, 0, 100, NativeListCell.HEIGHT)),
 					ContentInset = new UIEdgeInsets (-NativeListCell.HEIGHT, 0, 0, 0)

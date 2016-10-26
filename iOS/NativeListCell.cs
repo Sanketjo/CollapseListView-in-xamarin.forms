@@ -19,6 +19,8 @@ namespace CollapseListView.iOS
 
 		UILabel lbl_Title { get; set; }
 
+		public UIButton btnApply{ get; set; }
+
 		public UIImageView img_RightIcon { get; set; }
 
 
@@ -53,6 +55,10 @@ namespace CollapseListView.iOS
 			lbl_Title.TextColor = UIColor.DarkGray;
 			lbl_Title.Font = UIFont.BoldSystemFontOfSize (FontSize);
 			lbl_Title.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
+			btnApply = new UIButton ();
+			btnApply.SetTitle ("Apply", UIControlState.Normal);
+			btnApply.SetTitleColor (UIColor.White, UIControlState.Normal);
+			btnApply.BackgroundColor = UIColor.FromRGB (207, 10, 44);
 
 			img_RightIcon = new UIImageView (new CGRect (
 				ContentView.Frame.Width - NativeListCell.HEIGHT - 20, 
@@ -63,6 +69,7 @@ namespace CollapseListView.iOS
 			img_RightIcon.ContentMode = UIViewContentMode.Center;
 			img_RightIcon.AutoresizingMask = UIViewAutoresizing.FlexibleLeftMargin;
 
+			SubContainerView.AddSubview (btnApply);
 			SubContainerView.AddSubview (lbl_Title);
 			SubContainerView.AddSubview (seperatorLine);
 			SubContainerView.AddSubview (img_RightIcon);

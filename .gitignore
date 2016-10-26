@@ -1,0 +1,12 @@
+
+*.dll
+
+*.dylib
+
+*.exe
+
+*.dll
+
+iOS/bin/iPhoneSimulator/Debug/CollapseListView.iOS.app/PkgInfo
+
+iOS/bin/iPhoneSimulator/Debug/CollapseListView.iOS.app/runtime-options.plist

@@ -2,11 +2,14 @@
 using Xamarin.Forms.Platform.Android;
 using CollapseListView;
 using CollapseListView.Droid;
+using Android.Widget;
+using Android.Views;
+using System;
 
-[assembly: ExportRenderer (typeof(ExtendedListView), typeof(NativeExpanderRenderer))]
+[assembly: ExportRenderer (typeof (ExtendedListView), typeof (NativeExpanderRenderer))]
 namespace CollapseListView.Droid
 {
-	public class NativeExpanderRenderer : ViewRenderer<ExtendedListView, global::Android.Widget.ExpandableListView>
+	public class NativeExpanderRenderer : ViewRenderer<ExtendedListView, global::Android.Widget.ExpandableListView>, ExpandableListView.IOnChildClickListener
 	{
 		protected override void OnElementChanged (ElementChangedEventArgs<ExtendedListView> e)
 		{
@@ -22,7 +25,21 @@ namespace CollapseListView.Droid
 				// subscribe
 				Control.SetAdapter (new DataAdopter (Forms.Context as Android.App.Activity, e.NewElement.Items));
 				Control.SetGroupIndicator (null);
+				Control.SetOnChildClickListener (this);
 			}
+		}
+
+		public bool OnChildClick (ExpandableListView parent, Android.Views.View clickedView, int groupPosition, int childPosition, long id)
+		{
+			var item = DataAdopter.DataList [groupPosition].ChildItems [childPosition];
+			if (item != null) {
+				if (item.OnClickListener != null) {
+					item.OnClickListener.Invoke (item);
+				} else {
+					item.IsSelected = !item.IsSelected;
+				}
+			}
+			return false;
 		}
 	}
 }

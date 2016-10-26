@@ -6,17 +6,18 @@ using Android.Widget;
 
 namespace CollapseListView.Droid
 {
-	public class DataAdopter:BaseExpandableListAdapter
+	public class DataAdopter : BaseExpandableListAdapter
 	{
 		readonly Activity Context;
 
+		public static event EventHandler ProductRestoredCompleted;
 		public DataAdopter (Activity newContext, List<EntityClass> newList) : base ()
 		{
 			Context = newContext;
 			DataList = newList;
 		}
 
-		protected List<EntityClass> DataList { get; set; }
+		public static List<EntityClass> DataList { get; set; }
 
 		public override Android.Views.View GetGroupView (int groupPosition, bool isExpanded, View convertView, ViewGroup parent)
 		{
@@ -62,7 +63,7 @@ namespace CollapseListView.Droid
 
 		public override Java.Lang.Object GetChild (int groupPosition, int childPosition)
 		{
-			
+
 			throw new NotImplementedException ();
 		}
 
@@ -83,11 +84,6 @@ namespace CollapseListView.Droid
 
 		public override bool IsChildSelectable (int groupPosition, int childPosition)
 		{
-			var item = DataList [groupPosition].ChildItems [childPosition];
-			if (item.OnClickListener != null) {
-				item.OnClickListener.Invoke (item);
-			}
-//			return item.IsSelected = !item.IsSelected;
 			return true;
 		}
 
